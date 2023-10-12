@@ -179,4 +179,4 @@ Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karen
 
 ![Screenshot flutter_fundamental](../layout_dan_navigasi/docs/P4-L3.png)
 
-![Alt Text](../layout_dan_navigasi/docs/P4-L3.gif)
+![Screenshot flutter_fundamental](../layout_dan_navigasi/docs/P4-L3.gif)
