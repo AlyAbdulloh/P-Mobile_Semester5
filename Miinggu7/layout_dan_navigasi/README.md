@@ -180,3 +180,4 @@ Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karen
 ![Screenshot flutter_fundamental](../layout_dan_navigasi/docs/P4-L3.png)
 
 ![Screenshot flutter_fundamental](../layout_dan_navigasi/docs/P4-L3.gif)
+<img src = "docs/P4-L3.gif"><br>
