@@ -178,3 +178,5 @@ Tambahkan aset gambar ke dalam body seperti berikut:
 Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karena ListView mendukung scroll yang dinamis saat aplikasi dijalankan pada perangkat yang resolusinya lebih kecil.
 
 ![Screenshot flutter_fundamental](../layout_dan_navigasi/docs/P4-L3.png)
+
+![Alt Text](../layout_dan_navigasi/docs/P4-L3.gif)
