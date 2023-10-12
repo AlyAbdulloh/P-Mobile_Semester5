@@ -179,4 +179,4 @@ Pada langkah terakhir ini, atur semua elemen dalam ListView, bukan Column, karen
 
 ![Screenshot flutter_fundamental](../layout_dan_navigasi/docs/P4-L3.png)
 
-<img src = "docs/P4-L3.gif" width="400px"><br>
+<img src = "docs/P4-L3.gif" width="400px">
