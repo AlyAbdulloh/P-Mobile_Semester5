@@ -1,4 +1,4 @@
-import 'package:belanja/pages/home_page.dart';
+// import 'package:belanja/pages/home_page.dart';
 import 'package:belanja/shop/models/item.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +24,7 @@ class ItemPage extends StatelessWidget {
                     items.name,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 20,
                     ),
                   ),
                 ),
@@ -49,20 +50,33 @@ class ItemPage extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(
             title: Text(items.name),
+            leading: InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
+            ),
           ),
           body: ListView(
             children: [
-              Image.asset(
-                items.image,
-                width: 600,
-                height: 240,
-                fit: BoxFit.cover,
+              Hero(
+                tag: 'product_cover_${items.image}',
+                child: Image.asset(
+                  items.image,
+                  width: 600,
+                  height: 240,
+                  fit: BoxFit.cover,
+                ),
               ),
               titleSection,
               // buttonSection,
               // textSection,
             ],
           )),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

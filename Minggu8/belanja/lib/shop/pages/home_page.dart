@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:belanja/shop/models/item.dart';
@@ -33,11 +31,11 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/item', arguments: item);
                 },
                 child: SizedBox(
-                  height: 300,
+                  height: 235,
                   child: Card(
                     semanticContainer: true,
                     clipBehavior: Clip.antiAliasWithSaveLayer,
-                    elevation: 3,
+                    elevation: 4,
                     shadowColor: const Color.fromARGB(255, 27, 27, 27),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
@@ -67,14 +65,14 @@ class HomePage extends StatelessWidget {
                               Text(
                                 item.name,
                                 style: TextStyle(
-                                    fontSize: 20, fontWeight: FontWeight.bold),
+                                    fontSize: 17, fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(
                                 height: 5,
                               ),
                               Text(
                                 item.price.toString(),
-                                style: TextStyle(fontSize: 15),
+                                style: TextStyle(fontSize: 13),
                               ),
                               const SizedBox(
                                 height: 10,
@@ -88,7 +86,7 @@ class HomePage extends StatelessWidget {
                                   ),
                                   Text(item.rating.toString()),
                                 ],
-                              )
+                              ),
                             ],
                           )
                         ],
@@ -101,6 +99,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
