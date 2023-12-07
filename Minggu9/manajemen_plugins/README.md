@@ -4,6 +4,8 @@ Nama : Achmad Aly Abdulloh
 
 Nim : 2141720039
 
+No : 02
+
 Kelas : TI-3A
 
 ## Praktikum Menerapkan Plugin di Project Flutter
