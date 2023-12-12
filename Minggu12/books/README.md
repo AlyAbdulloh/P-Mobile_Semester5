@@ -49,4 +49,6 @@ substring digunakan untuk mengubah data yang berupa JSON menjadi string. dan cat
 - Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
 
+<img src="../books/docs/P3-L6.gif" width="200px"></img>
+
 
