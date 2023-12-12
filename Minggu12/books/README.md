@@ -1,16 +1,21 @@
-# books
+# Jobsheet Week 12 - Ashyncronous
 
-A new Flutter project.
+Achmad Aly Abdulloh
 
-## Getting Started
+2141720039
 
-This project is a starting point for a Flutter application.
+02
 
-A few resources to get you started if this is your first Flutter project:
+# Praktikum 1: Mengunduh Data dari Web Service (API)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+*Soal 2*
+- Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel path di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="../books/docs/P1-L4.png"></img>
+
+- Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan capture milik Anda dan tulis di README pada laporan praktikum. Lalu lakukan commit dengan pesan `"W12: Soal 2"`.
+
+<img src="../books/docs/P1-L4-2.png"></img>
+
+
+
