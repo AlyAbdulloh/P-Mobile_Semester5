@@ -51,4 +51,12 @@ substring digunakan untuk mengubah data yang berupa JSON menjadi string. dan cat
 
 <img src="../books/docs/P3-L6.gif" width="200px"></img>
 
+# Praktikum 4: Memanggil Future secara paralel
+
+*soal 7*
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
+
+<img src="../books/docs/P4-L3.gif" width="200px"></img>
+
+
 
