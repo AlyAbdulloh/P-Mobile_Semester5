@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,7 @@ class FuturePage extends StatefulWidget {
 
 class _FuturPageState extends State<FuturePage> {
   String result = '';
+  late Completer completer;
 
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
@@ -67,6 +69,26 @@ class _FuturPageState extends State<FuturePage> {
     });
   }
 
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate2();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
+
+  calculate2() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError({});
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,7 +109,14 @@ class _FuturPageState extends State<FuturePage> {
               //   result = 'An error occurred';
               //   setState(() {});
               // });
-              count();
+              // count();
+              getNumber().then((value) {
+                setState(() {
+                  result = value.toString();
+                });
+              }).catchError((e) {
+                result = 'An error occurred';
+              });
             },
           ),
           const Spacer(),

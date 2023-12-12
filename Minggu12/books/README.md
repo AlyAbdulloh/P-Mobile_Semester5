@@ -27,6 +27,26 @@ substring digunakan untuk mengubah data yang berupa JSON menjadi string. dan cat
 
 <img src="../books/docs/P1-L5.gif" width="200px"></img>
 
+# Praktikum 2: Menggunakan await/async untuk menghindari callbacks
 
+### Langkah 4
+
+<img src="../books/docs/P2-L4.png" width="200px"></img>
+
+# Praktikum 3: Menggunakan Completer di Future
+
+### Lanhkah 4
+
+<img src="../books/docs/P3-L4.png" width="200px"></img>
+
+*soal 5*
+- Jelaskan maksud kode langkah 2 tersebut!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+<img src="../books/docs/P3-L4.png" width="200px"></img>
+
+*soal 6*
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
 
 
