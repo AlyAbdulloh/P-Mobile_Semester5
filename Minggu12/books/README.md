@@ -58,5 +58,20 @@ substring digunakan untuk mengubah data yang berupa JSON menjadi string. dan cat
 
 <img src="../books/docs/P4-L3.gif" width="200px"></img>
 
+*soal 8*
+
+# Praktikum 5: Menangani Respon Error pada Async Code
+
+*soal 9*
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+
+<img src="../books/docs/P5-L3.gif" width="200px"></img>
+
+*Soal 10*
+- Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+<img src="../books/docs/P5-L4.png" width="200px"></img>
+
+
 
 
