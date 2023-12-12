@@ -17,5 +17,16 @@ Achmad Aly Abdulloh
 
 <img src="../books/docs/P1-L4-2.png"></img>
 
+*Soal 3*
+- Jelaskan maksud kode langkah 5 tersebut terkait `substring` dan `catchError!`
+
+Jawaban: 
+substring digunakan untuk mengubah data yang berupa JSON menjadi string. dan catchError digunkan untuk menampilkan pesan apabila data JSON tidak ada.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
+
+<img src="../books/docs/P1-L5.gif" width="200px"></img>
+
+
 
 
