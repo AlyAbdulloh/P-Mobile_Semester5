@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ocr_ktm/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -27,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
         body: Stack(
           children: [
             Positioned(top: 80, child: _buildTop()),
-            Positioned(bottom: 0, child: _buildBottom()),
+            Positioned(bottom: 0, child: _buildBottom(context)),
           ],
         ),
       ),
@@ -58,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _buildBottom() {
+  Widget _buildBottom(context) {
     return SizedBox(
       width: mediaSize.width,
       child: Card(
@@ -67,13 +68,13 @@ class _LoginPageState extends State<LoginPage> {
                 topLeft: Radius.circular(30), topRight: Radius.circular(30))),
         child: Padding(
           padding: const EdgeInsets.all(32.0),
-          child: _buildForm(),
+          child: _buildForm(context),
         ),
       ),
     );
   }
 
-  Widget _buildForm() {
+  Widget _buildForm(context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -99,7 +100,7 @@ class _LoginPageState extends State<LoginPage> {
         const SizedBox(
           height: 20,
         ),
-        _buildLoginButton(),
+        _buildLoginButton(context),
       ],
     );
   }
@@ -122,9 +123,18 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _buildLoginButton() {
+  Widget _buildLoginButton(context) {
     return ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          if (emailController.text == "uwongsabar12@gmail.com" &&
+              passwordController.text == "12345") {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
+          } else {
+            ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Please fill input')));
+          }
+        },
         style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             elevation: 20,
